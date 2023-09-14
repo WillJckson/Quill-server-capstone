@@ -1,0 +1,30 @@
+[
+    {
+        "model": "Quillapi.quotecategory",
+        "pk": 1,
+        "fields": {
+            "label": "Motivational"
+        }
+    },
+    {
+        "model": "Quillapi.quotecategory",
+        "pk": 2,
+        "fields": {
+            "label": "Happy"
+        }
+    },
+    {
+        "model": "Quillapi.quotecategory",
+        "pk": 3,
+        "fields": {
+            "label": "Wise"
+        }
+    },
+    {
+        "model": "Quillapi.quotecategory",
+        "pk": 4,
+        "fields": {
+            "label": "Inspirational"
+        }
+    }
+]
