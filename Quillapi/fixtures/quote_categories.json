@@ -3,28 +3,28 @@
         "model": "Quillapi.quotecategory",
         "pk": 1,
         "fields": {
-            "label": "Motivational"
+            "category": "Motivational"
         }
     },
     {
         "model": "Quillapi.quotecategory",
         "pk": 2,
         "fields": {
-            "label": "Happy"
+            "category": "Happy"
         }
     },
     {
         "model": "Quillapi.quotecategory",
         "pk": 3,
         "fields": {
-            "label": "Wise"
+            "category": "Wise"
         }
     },
     {
         "model": "Quillapi.quotecategory",
         "pk": 4,
         "fields": {
-            "label": "Inspirational"
+            "category": "Inspirational"
         }
     }
 ]

@@ -3,4 +3,9 @@
         "--load-plugins=pylint_django",
         "--django-settings-module=quill.settings",
     ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#00351D",
+        "titleBar.activeBackground": "#014B29",
+        "titleBar.activeForeground": "#E8FFF5"
+    },
 }

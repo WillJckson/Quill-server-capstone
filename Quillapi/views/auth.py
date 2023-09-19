@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
-from Quillapi.models import UserProfile
+from Quillapi.models import Profile
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -13,7 +13,7 @@ def login_user(request):
     '''Handles the authentication of a UserProfile
 
     Method arguments:
-      request -- The full HTTP request object
+    request -- The full HTTP request object
     '''
     username = request.data['username']
     password = request.data['password']
@@ -41,7 +41,7 @@ def register_user(request):
     '''Handles the creation of a new UserProfile for authentication
 
     Method arguments:
-      request -- The full HTTP request object
+    request -- The full HTTP request object
     '''
 
     # Create a new user by invoking the `create_user` helper method
@@ -54,7 +54,7 @@ def register_user(request):
     )
 
     # Now save the extra info in the levelupapi_UserProfile table
-    quillprofile = UserProfile.objects.create(
+    quillprofile = Profile.objects.create(
         bio=request.data['bio'],
         user=new_user
     )

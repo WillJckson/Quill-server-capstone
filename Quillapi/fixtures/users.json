@@ -3,16 +3,16 @@
         "model": "auth.user",
         "pk": 1,
         "fields": {
-            "password": "pbkdf2_sha256$320000$skKMaZQjJwGMIJO1MmeaoP$68b2U4VFPL1ZQYgYmM7sIJUWPDhKCrAJOrdz4MWnLq4=",
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
             "last_login": null,
             "is_superuser": false,
-            "username": "ryan@ryantanay.com",
-            "first_name": "Ryan",
-            "last_name": "Tanay",
-            "email": "ryan@ryantanay.com",
+            "username": "Carrie1945",
+            "first_name": "Carrie",
+            "last_name": "Belk",
+            "email": "me@me.com",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2022-10-21T21:15:55.764Z",
+            "date_joined": "2020-08-28T14:51:39.989Z",
             "groups": [],
             "user_permissions": []
         }
