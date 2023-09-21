@@ -1,9 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import User
 from .quote_category import QuoteCategory
-
+from .quill_user import QuillUser
 class Quote(models.Model):
     text = models.TextField()
     author = models.CharField(max_length=255)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    categories = models.ForeignKey('QuoteCategory', on_delete=models.CASCADE)
+    quill_user = models.ForeignKey(QuillUser, on_delete=models.CASCADE)
+    quote_category = models.ForeignKey(QuoteCategory, on_delete=models.CASCADE)

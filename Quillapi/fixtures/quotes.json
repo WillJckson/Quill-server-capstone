@@ -5,8 +5,8 @@
         "fields": {
             "text": "The only way to do great work is to love what you do.",
             "author": "Steve Jobs",
-            "user": 1,
-            "categories": 4
+            "quill_user": 1,
+            "quote_category": 4
         }
     },
     {
@@ -15,8 +15,8 @@
         "fields": {
             "text": "In three words I can sum up everything I've learned about life: it goes on.",
             "author": "Robert Frost",
-            "user": 1,
-            "categories": 3
+            "quill_user": 1,
+            "quote_category": 3
         }
     },
     {
@@ -25,8 +25,8 @@
         "fields": {
             "text": "Love the life you live. Live the life you love.",
             "author": "Bob Marley",
-            "user": 1,
-            "categories": 3
+            "quill_user": 1,
+            "quote_category": 3
         }
     }
 ]

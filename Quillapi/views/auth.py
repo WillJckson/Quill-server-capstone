@@ -5,12 +5,12 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
-from Quillapi.models import Profile
+from Quillapi.models import QuillUser
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_user(request):
-    '''Handles the authentication of a UserProfile
+    '''Handles the authentication of a UserQuillUser
 
     Method arguments:
     request -- The full HTTP request object
@@ -38,7 +38,7 @@ def login_user(request):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_user(request):
-    '''Handles the creation of a new UserProfile for authentication
+    '''Handles the creation of a new UserQuillUser for authentication
 
     Method arguments:
     request -- The full HTTP request object
@@ -53,14 +53,14 @@ def register_user(request):
         last_name=request.data['last_name']
     )
 
-    # Now save the extra info in the levelupapi_UserProfile table
-    quillprofile = Profile.objects.create(
+    # Now save the extra info in the levelupapi_UserQuillUser table
+    quillUser = QuillUser.objects.create(
         bio=request.data['bio'],
         user=new_user
     )
 
     # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=quillprofile.user)
+    token = Token.objects.create(user=quillUser.user)
     # Return the token to the client
     data = { 'token': token.key }
     return Response(data)
