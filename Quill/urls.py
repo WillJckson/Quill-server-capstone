@@ -1,7 +1,7 @@
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
-from Quillapi.views import register_user, login_user, QuoteView, CategoryView
+from Quillapi.views import register_user, login_user, QuoteView, CategoryView, search_view
 from django.contrib import admin
 
 router = routers.DefaultRouter(trailing_slash=False)
